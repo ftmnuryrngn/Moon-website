@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+*{
+    padding: 0; 
+    margin: 0;
+    font-family:'Oswald', sans-serif;
+}
+body{
+    background-color: rgb(249,249,249);
+    background-image: url("./rocket.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*Navbar*/
+.navbar{
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    display: flex;
+    height: 100px;
+}
+.logo{
+    width: 80px;
+    height: 50px;
+    margin: 30px;
+    margin-left: 130px; 
+}
+.navbar ul li{
+    display: inline-block;
+    margin: 20px;
+    position: relative; 
+    left: 500px; 
+    list-style-type: none;
+    margin-top: 35px;
+  
+}
+.navbar ul li a{
+    text-decoration: none; 
+      color: black;
+      font-weight: bold;  
+}
+.navbar ul li a:hover{
+     text-decoration: underline;
+     text-decoration-color:#e8555a ;
+}
+/*Contact*/
+.entery{
+    display:grid ;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr)) ;
+}
+.title h2{
+    font-size: 2rem;
+    font-weight: 200;
+    position: relative;
+    top: 150px;
+    left: 300px;
+}
+.moon{
+    width: 90%;
+     
+}
+.btn{
+    width: 150px;
+    height: 50px;
+    position: relative;
+    top:200px;
+    left:350px;
+    font-size: 20px;
+    background-color:#e8555a ;
+    color: #fff;
+    border: 1px solid #e8555a;
+}
+.btn:focus{
+    outline: none;
+}
+.btn:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+.scroll{
+    position: relative;
+    left: 45%;
+    top: 10px;
+    font-size: 23px;
+    text-decoration: none;
+    color: #000;
+}
+/*Responsive*/
+ 
+@media  (max-width:1200px) {
+     
+    .btn {
+        position: relative;
+        left: 25%; 
+       top:50%;
+       width: 95px;
+       height: 35px;
+       font-size: 18px;
+       border-radius: 5px;
+       margin-top: 15px;
+    }
+    .title h2{
+       position: relative;
+       left:10% ;
+       top:45% ; 
+    }
+    .img .moon{
+        position: relative;
+        top: 20px;
+    }
+    .scroll{
+        position: relative;
+        left: 13%;
+    }
+}
+
+@media  (max-width:600px) {
+    body{
+        background-image: none;
+    } 
+    .navbar ul li{
+        display: none;
+    }
+    .btn {
+        position: relative;
+        left: 25%; 
+       top:10px;
+       width: 95px;
+       height: 35px;
+       font-size: 18px;
+       border-radius: 5px;
+       margin-top: 15px;
+    }
+    .title h2{
+       position: relative;
+       left:10% ;
+       top:15px ; 
+    }
+    .img .moon{
+        position: relative;
+        top: 20px;
+    }
+    .scroll{
+        position: relative;
+        left: 25%;
+       top: 15px;
+    }
+}
